@@ -3,9 +3,7 @@ import React from "react";
 function Header() {
    return (
       <section>
-         <h1>Header</h1>
-         <h2>Header</h2>
-         <h3>Header</h3>
+         <h1 className="fixed w-screen bg-slate-900 text-[#D0D0D0]  flex flex-row justify-center items-center">TA-TE-TI</h1>
       </section>
    );
 }
