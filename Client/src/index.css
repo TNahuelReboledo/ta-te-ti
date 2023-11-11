@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
 @layer base {
-   html{
-      font-family: 'Rubik Mono One', monospace;
+   html {
+      font-family: "Rubik Mono One", monospace;
+      @apply bg-dark;
+      @apply text-light;
    }
 
-   h1{
-      @apply text-5xl p-3;
+   h1 {
+      @apply text-5xl;
+   }
+
+   .Square {
+      @apply bg-Light-Azure hover:bg-Azure transition-colors rounded-lg flex flex-col justify-center items-center text-3xl;
    }
 }
